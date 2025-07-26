@@ -1,0 +1,8 @@
+AuCo: Peer-to-Commerce (P2C) ProtocolAuCo is a decentralized platform that allows businesses to accept cryptocurrency payments which are automatically swapped into stablecoins and held in a treasury vault with customizable DeFi strategies.This repository contains the full-stack implementation for the AuCo protocol, including smart contracts, frontend application, and backend services.For a complete and detailed overview of the protocol's vision, architecture, and roadmap, please see the official AuCo Whitepaper.Project StructureThe repository is organized into the following main directories:/contracts: Contains all Solidity smart contracts that form the on-chain backbone of the AuCo protocol. This includes the core factory and vault logic, as well as the modular strategy adapters./frontend: A Next.js application that serves as the primary user interface for businesses to manage their payments, treasury, and DeFi strategies./backend: Contains off-chain services for monitoring, API access for programmatic invoicing, and integrations with third-party services like fiat on/off-ramps./scripts: Deployment and interaction scripts for managing the smart contracts via Hardhat./tests: A comprehensive test suite to ensure the security and reliability of all smart contracts.Getting StartedPrerequisitesNode.js (v16 or later)Yarn or npmA wallet provider like MetaMaskInstallation & SetupClone the repository:git clone [repository-url]
+cd auco-protocol
+Install dependencies for all workspaces:npm install
+Compile Smart Contracts:npx hardhat compile
+Run Local Testnet:npx hardhat node
+Run Frontend:cd frontend
+npm run dev
+For more detailed instructions on deployment and testing, please refer to the documentation within each respective directory.
